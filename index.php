@@ -51,5 +51,20 @@
 </head>
 <body>
     <h1>Hotel</h1>
+
+    <!-- uso ciclo foreach -->
+
+    <?php
+
+        foreach ($hotels as $currentHotel) {
+            echo "<ul>";
+                foreach($currentHotel as $key => $value) {
+                    echo "<li>$key: $value</li>";
+                } 
+            echo "</ul>";
+        }
+
+    ?>
+    
 </body>
 </html>
